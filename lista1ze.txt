@@ -1,0 +1,139 @@
+1)_ Por que falamos que Java é totalmente aderente às técnicas de Orientação a Objetos?
+
+R:
+
+2)_ Explique o que é e como se utiliza o processo de “abstração”.
+
+R: Fazer uma seleção escolhendo entre  as informações que são importantes para a implementação e descartar as que não são importantes.
+
+3)_ Quais são os artefatos produzidos na programação orientada a objetos?
+
+R:
+
+4)_ O que é um “tipo primitivo” de dados?
+
+R: Tipo primitivos de dados são tipos de dados básicos fornecidos pela linguagem de programação, como int, double e char.
+
+5)_ O que é um “tipo abstrato” de dados?
+
+R: Os tipos abstratos de dados são os que não são fornecidos pela linguagem, ou seja, os tipos de dados criados pelo dev, como structs em C ou classes em Java.
+
+6)_ Explique o que é o “Garbage Collector”. Como este recurso pode dinamizar o funcionamento do sistema?
+
+R:
+
+7)_ Considerando o modo Shell (linhas de comando) do sistema operacional Windows, como se faz para:
+7.a)_ Compilar um código fonte Java;
+
+R: javac (novedoarquivo).java
+
+7.b)_ Fazer com que a J.V.M. (Máquina Virtual Java) execute uma aplicação Java.
+
+R: java (nomedoarquivo)
+
+8)_ O que é o “ByteCode”?
+
+R: O ByteCode é o arquivo que você gera quando compila o source em sua devida linguagem, no caso do java, o ByteCode é o .class e o source é o .java
+
+9)_ Explique o que é a característica “Portabilidade”. Como isto é possível com aplicações Java?
+
+R: Portabilidade nesse caso se refere a S.O, no caso, java tem uma particularidade, que se diz a J.V.M. (Máquina Virtual Java), para rodar um arquivo java, é necessário essa JVM, então, o arquivo java não conversa com o S.O, e sim com a JVM, então em qualquer S.O um arquivo java roda.
+
+10)_ Justifique a afirmação que diz que “a segurança em Java se dá em dois níveis: proteção de hardware e proteção de software”.
+
+R:
+
+11)_ Explique como aplicamos o conceito de “Modularidade” em Java. Na resposta desta questão deve-se trata dos conceitos sobre “Acoplagem” e “Coesão”.
+
+R:
+
+11.a)_ Como esta característica pode ajudar na questão da “Manutenibilidade”?
+
+R:
+
+12)_ Para servem os objetos:
+12.a)_ this;
+
+R:
+
+12.b)_ super.
+
+R:
+
+13)_ Usando Java, dê um exemplo que contemple as respostas das questões 12.a e 12.b.
+
+R:
+
+14)_ Dentre os conceitos de sustenta a Orientação a Objetos, explique:
+14.a)_ Encapsulamento:
+14.a.i)_Seus níveis (explique cada um dos três níveis);
+
+R:
+
+14.a.ii)_ Como o Encapsulamento pode nos ajudar na padronização, segurança e
+“manutenibilidade” no desenvolvimento de sistemas;
+
+R:
+
+14.b)_ Herança:
+14.b.i)_ Explique os conceitos que “Generalização” e “Especialização”;
+
+R:
+
+14.b.ii)_ Como o mecanismo de Herança pode nos ajudar na padronização, segurança e “manutenibilidade” no desenvolvimento de sistemas;
+
+R:
+
+14.b.iii)_ Explique o conceito de “Reusabilidade”. Como este é aplicado no mecanismo de Herança e, ainda, como esta possibilidade nos ajuda no dinamismo da codificação.
+
+R:
+
+14.c)_ Polimorfismo:
+14.c.i)_ Sobrecarga;
+
+R:
+
+14.c.ii)_ Sobrescrita;
+
+R:
+
+14.c.iii)_ Coerção.
+
+R:
+
+15)_ Construa um programa para exemplificar as respostas das questões 14.a, 14.b e 14.c.
+
+R:
+
+16)_ Explique o que são trocas de mensagens? Como isso acontece?
+
+R:
+
+17)_ O que é um “método construtor”? Qual sua importância? Faça um código que demonstre sua explicação.
+
+R:
+
+18)_ Explique o que são como e quando utilizamos:
+18.a) Classe abstrata;
+
+R:
+
+18.b) Método abstrato;
+
+R:
+
+18.c)_ Classe final;
+
+R:
+
+18.d)_ Atributo final;
+
+R:
+
+18.e)_ Método final.
+
+R:
+
+19)_ Dentro da tecnologia Java, explique o que é a estrutura de dados “Interface”. Quando a utilizamos?
+
+R: Usamos o termo "Interface" quando há dois elementos que conversam entre si, mas não diretamente, um exemplo disso é a JVM, que se comunica entre o S.O e o .class
