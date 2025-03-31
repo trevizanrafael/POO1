@@ -13,7 +13,7 @@ O objetivo deste repositório é fornecer implementações e explicações clara
 
 ## 🧑‍🏫 Como Usar
 
-Para explorar as implementações, basta clonar o repositório e começar a explorar os exemplos em Python (ou outra linguagem, dependendo do seu projeto).
+Para explorar as implementações, basta clonar o repositório e começar a explorar os exemplos em Java.
 
 ```bash
 git clone https://github.com/usuario/poo1.git
