@@ -1,2 +1,3 @@
 https://docs.oracle.com/javase/8/docs/api/
 
+https://download.java.net/java/early_access/panama/docs/api/index.html
