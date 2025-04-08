@@ -1,0 +1,15 @@
+Getters
+
+geralmente publico, lugar que você vai pegar os dados:
+public int//tipo da variavel getCpf//jeito certo de escreve(){
+  return cpf;//cpf precisa existir globalmente
+}
+
+Setters
+
+parecidos com getters, publicos, nao retorna
+public void setCpf(int cpf){
+  this.cpf = cpf; //é preciso usar o this pra saber que nao é o mesmo nome de variavel
+}
+
+o metodo main nao pertence a classe
