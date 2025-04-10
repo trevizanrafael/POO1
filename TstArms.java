@@ -19,10 +19,17 @@ public class TstArms{
 		a2.setMunicao(50);
 		
 
+		p1.getLugar().setNumero(123);
+		p1.getLugar().setRua("Privet Privet");
+
+		p2.getLugar().setNumero(321);
+		p2.getLugar().setRua("Washington Street");
+
 		String nome1 = a1.getNome();
 		String fabricante1 = a1.getFabricante();
 		int municao1 = a1.getMunicao();
 		int ano1 = a1.getAno_c();
+		//String rua1 = a1.
 
 		String nome2 = a2.getNome();
 		String fabricante2 = a2.getFabricante();
