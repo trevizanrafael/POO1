@@ -1,0 +1,19 @@
+Troca de Mensagens:
+Comunicação entre objetos. (Armas e TstArms)
+
+Encapsulamento:
+Conceito e técninca que permite gerenciar as trocas de mensagens, possui níveis:
+- + public = sem restrições de acesso
+- - private = restrição total de acesso
+- # protected restricao parcial
+- package restricao parcial
+
+4 artefatos (aquilo q vc gera):
+  - Classe
+  - Atributos
+  - Objetos
+  - Métodos
+
+3 concetitos
+  - Encapsulamento (níveis: + public, - private, #protected (herança), package)
+  - Herança 
