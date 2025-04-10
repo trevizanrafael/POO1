@@ -9,7 +9,17 @@ public class Armas{
 	private String fabricante = "";
 	
 
+	private Endereco lugar = new Endereco();
+	
 
+
+	public Endereco getLugar(){
+		return lugar;
+	}
+	public Endereco setLugar(Endereco lugar){
+		this.lugar=lugar;
+	}
+	
 	
 	
 	
@@ -65,6 +75,7 @@ public class Armas{
 		this.fabricante=fabricante;
 	
 	}
-	
+
+		
 
 }
