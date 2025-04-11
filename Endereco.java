@@ -6,7 +6,7 @@ public class Endereco{
         this.rua=rua;
     }
     
-    public void setRua(int numero){
+    public void setNumero(int numero){
         this.numero=numero;
     }
     
