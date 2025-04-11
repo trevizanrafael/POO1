@@ -19,30 +19,29 @@ public class TstArms{
 		a2.setMunicao(50);
 		
 
-		p1.getLugar().setNumero(123);
-		p1.getLugar().setRua("Privet Privet");
+		a1.getLugar().setNumero(123);
+		a1.getLugar().setRua("Privet Privet");
 
-		p2.getLugar().setNumero(321);
-		p2.getLugar().setRua("Washington Street");
+		a2.getLugar().setNumero(321);
+		a2.getLugar().setRua("Washington Street");
 
 		String nome1 = a1.getNome();
 		String fabricante1 = a1.getFabricante();
 		int municao1 = a1.getMunicao();
 		int ano1 = a1.getAno_c();
-		//String rua1 = a1.
+		String rua1 = a1.getLugar().getRua();
+		int num1 = a1.getLugar().getNumero();
 
 		String nome2 = a2.getNome();
 		String fabricante2 = a2.getFabricante();
 		int municao2 = a2.getMunicao();
 		int ano2 = a2.getAno_c();
+        	String rua2 = a2.getLugar().getRua();
+		int num2 = a2.getLugar().getNumero();
 
 
 
-		System.out.println(nome1+" "+fabricante1+" "+municao1+" "+ano1);
-		System.out.println(nome2+" "+fabricante2+" "+municao2+" "+ano2);
-		
+		System.out.println(nome1+" "+fabricante1+" "+municao1+" "+ano1+"\n"+rua1+" "+num1);
+		System.out.println(nome2+" "+fabricante2+" "+municao2+" "+ano2+"\n"+rua2+" "+num2);
 	}
-	
-	
-	
 }
