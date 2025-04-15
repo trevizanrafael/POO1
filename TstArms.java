@@ -6,21 +6,29 @@ public class TstArms{
 		String valor = l.entDados("Valor 1:");
 		System.out.println(valor);*/
 		//Assim que faz leitura pelo teclado
-		
+
+
+		Leitura l = new Leitura();
+
 		a1 = new Armas();
 		a2 = new Armas();
 
 		a1.setNome("Ak-47");
-		a2.setNome("M4-A1");
+		String nome2 = l.entDados("Nome da arma 2:");
+		a2.setNome(nome2);	
+
 		
 		a1.setFabricante("Russia");
-		a2.setFabricante("EUA");
+		String fab2 = l.entDados("Nome do fabricante da arma 2:");
+		a2.setFabricante(fab2);
 		
 		a1.setAno_c(1947);
-		a2.setAno_c(1983);
+		String ano2 = l.entDados("Ano de criacao da arma 2:");
+		a2.setAno_c(Integer.parseInt(ano2));
 		
 		a1.setMunicao(30);
-		a2.setMunicao(50);
+		String mun2 = l.entDados("Numero de balas da arma 2:");
+		a2.setMunicao(Integer.parseInt(mun2));
 		
 
 		a1.getLugar().setNumero(123);
@@ -36,10 +44,10 @@ public class TstArms{
 		String rua1 = a1.getLugar().getRua();
 		int num1 = a1.getLugar().getNumero();
 
-		String nome2 = a2.getNome();
+		//String nome2 = a2.getNome();
 		String fabricante2 = a2.getFabricante();
 		int municao2 = a2.getMunicao();
-		int ano2 = a2.getAno_c();
+		//int ano2 = a2.getAno_c();
         	String rua2 = a2.getLugar().getRua();
 		int num2 = a2.getLugar().getNumero();
 
