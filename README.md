@@ -7,29 +7,33 @@
 </p>
 
 <p align="center">
-  📌 Este repositório é dedicado ao desenvolvimento contínuo de um projeto em Java<br/>
-  para a disciplina de <strong>Programação Orientada a Objetos 1 (POO1)</strong>. <br/>
-  Cada funcionalidade foi criada com base nos conteúdos vistos em aula e aplicados com boas práticas.
+  📌 Este repositório contém o projeto desenvolvido durante o curso de <strong>Programação Orientada a Objetos 1 (POO1)</strong> com Java. <br/>
+  Cada branch representa um estágio diferente da evolução do projeto, conforme os tópicos abordados em aula.
 </p>
 
 ---
 
-## 🪄 Organização do Projeto
+## 🧭 Organização por Branches
 
-📁 O projeto está dividido em **branches**, e cada uma representa um **estágio da evolução do curso**:
+<p align="center">
+  Cada branch representa a evolução do projeto ao longo das aulas e atividades da disciplina. <br/>
+  Você pode navegar entre elas para ver como o projeto foi crescendo aula por aula.
+</p>
 
-| 🏷️ Branch        | 🧩 Conteúdo Principal                    |
-|------------------|-----------------------------------------|
-| `aula-01`        | Estrutura básica, Hello World           |
-| `aula-02`        | Classes, objetos e métodos              |
-| `aula-03`        | Encapsulamento e modificadores          |
-| `aula-04`        | Construtores e sobrecarga               |
-| `aula-05`        | Vetores de objetos                      |
-| `aula-06`        | Herança e polimorfismo                  |
-| `aula-07`        | Interfaces e classes abstratas          |
-| `aula-final`     | Projeto consolidado com tudo aplicado   |
+<div align="center">
 
-> Você pode navegar entre as branches para ver como o projeto evoluiu com o tempo.
+| 📂 Branch | ✏️ Descrição |
+|----------|--------------|
+| [`exercicios-Aula1`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula1) 
+| [`exercicios-Aula3`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula3) 
+| [`exercicios-Aula4`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula4) 
+| [`exercicios-Aula5`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula5)
+| [`exercicios-Aula6`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula6)
+| [`exerciciosbasicos`](https://github.com/trevizanrafael/POO1/tree/exerciciosbasicos)
+| [`exercicios-Lista1`](https://github.com/trevizanrafael/POO1/tree/exercicios-Lista1)
+| [`exercicios-Gemini`](https://github.com/trevizanrafael/POO1/tree/exercicios-Gemini) 
+
+</div>
 
 ---
 
