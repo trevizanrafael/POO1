@@ -2,6 +2,10 @@ public class TstArms{
 	public static void main(String args[]){
 		Armas a1;
 		Armas a2;
+		/*Leitura l = new Leitura();
+		String valor = l.entDados("Valor 1:");
+		System.out.println(valor);*/
+		//Assim que faz leitura pelo teclado
 		
 		a1 = new Armas();
 		a2 = new Armas();
