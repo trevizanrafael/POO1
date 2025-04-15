@@ -1,20 +1,48 @@
-# Programação Orientada a Objetos (POO) 📦💻
+<h1 align="center">🧠 Projeto POO1 - Programação Orientada a Objetos com Java</h1>
 
-Este repositório contém implementações de conceitos de **Programação Orientada a Objetos (POO)**, com exemplos práticos e explicações sobre os principais pilares da POO. 🧑‍💻🔍
+<p align="center">
+  <img src="https://img.shields.io/badge/linguagem-Java-red?style=for-the-badge&logo=java" />
+  <img src="https://img.shields.io/badge/status-em%20evolução-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/progresso-aulas📚-blueviolet?style=for-the-badge" />
+</p>
 
-## 🚀 Objetivos
+<p align="center">
+  📌 Este repositório contém o projeto desenvolvido durante o curso de <strong>Programação Orientada a Objetos 1 (POO1)</strong> com Java. <br/>
+  Cada branch representa um estágio diferente da evolução do projeto, conforme os tópicos abordados em aula.
+</p>
 
-O objetivo deste repositório é fornecer implementações e explicações claras sobre os conceitos fundamentais de POO, como:
+---
 
-- **Encapsulamento** 🔒
-- **Herança** 🧬
-- **Polimorfismo** 🔄
-- **Abstração** 🎭
+## 🧭 Organização por Branches
 
-## 🧑‍🏫 Como Usar
+<p align="center">
+  Cada branch representa a evolução do projeto ao longo das aulas e atividades da disciplina. <br/>
+  Você pode navegar entre elas para ver como o projeto foi crescendo aula por aula.
+</p>
 
-Para explorar as implementações, basta clonar o repositório e começar a explorar os exemplos em Java.
+<div align="center">
+
+| 📂 Branch |
+|----------|
+| [`exercicios-Aula1`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula1) | 
+| [`exercicios-Aula3`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula3) | 
+| [`exercicios-Aula4`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula4) |
+| [`exercicios-Aula5`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula5) | 
+| [`exercicios-Aula6`](https://github.com/trevizanrafael/POO1/tree/exercicios-Aula6) | 
+| [`exerciciosbasicos`](https://github.com/trevizanrafael/POO1/tree/exerciciosbasicos) | 
+| [`exercicios-Lista1`](https://github.com/trevizanrafael/POO1/tree/exercicios-Lista1) |
+| [`exercicios-Gemini`](https://github.com/trevizanrafael/POO1/tree/exercicios-Gemini) |
+
+</div>
+
+---
+
+## 📁 Estrutura Base (Exemplo)
 
 ```bash
-git clone https://github.com/usuario/poo1.git
-cd poo1
+📦 src/
+ ├── Main.java           # Classe principal
+ ├── Produto.java        # Classe base do sistema
+ ├── Gerenciador.java    # Controla lista e operações
+ └── utils/
+     └── Console.java    # Funções auxiliares de terminal
