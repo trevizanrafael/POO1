@@ -1,41 +1,68 @@
 public class TstArms{
 	public static void main(String args[]){
-		Armas a1;
-		Armas a2;
-		/*Leitura l = new Leitura();
-		String valor = l.entDados("Valor 1:");
-		System.out.println(valor);*/
-		//Assim que faz leitura pelo teclado
+		//Criacao dos objetos
+        Armas a1;
+        Leitura l;
 
-
-		Leitura l = new Leitura();
-
+        //Inicializacao dos objetos
 		a1 = new Armas();
-		a2 = new Armas();
+        l =  new Leitura();
 
-		a1.setNome("Ak-47");
-		String nome2 = l.entDados("Nome da arma 2:");
-		a2.setNome(nome2);	
+        //Entrada do nome do objeto
+		String nome = l.entDados("Nome da arma:");
+		a1.setNome(nome);	
 
 		
-		a1.setFabricante("Russia");
-		String fab2 = l.entDados("Nome do fabricante da arma 2:");
-		a2.setFabricante(fab2);
+		//Entrada do nome do fabricante
+		String fabricante = l.entDados("Nome do fabricante da arma:");
+		a1.setFabricante(fabricante);
 		
-		a1.setAno_c(1947);
-		String ano2 = l.entDados("Ano de criacao da arma 2:");
-		a2.setAno_c(Integer.parseInt(ano2));
-		
-		a1.setMunicao(30);
-		String mun2 = l.entDados("Numero de balas da arma 2:");
-		a2.setMunicao(Integer.parseInt(mun2));
-		
+		//Entrada do ano de criacao da arma
+        boolean ver;
+        do{    
+            ver = true;
+            String ano = l.entDados("Ano de criacao da arma:");
+            try{
+                a1.setAno_c(Integer.parseInt(ano));
+            } catch(NumberFormatException e){
+                System.out.println("Digite apenas numerais.");
+                ver = false;
+            }
+        } while(!ver);
 
-		a1.getLugar().setNumero(123);
-		a1.getLugar().setRua("Privet Privet");
+		//Entrada do numero de balas
+        do{    
+            ver = true;
+            String municao = l.entDados("Numero de balas da arma:");
+            try{
+                a1.setMunicao(Integer.parseInt(municao));
+            } catch(NumberFormatException e){
+                System.out.println("Digite apenas numerais.");
+                ver = false;
+            }
+        } while(!ver);
 
-		a2.getLugar().setNumero(321);
-		a2.getLugar().setRua("Washington Street");
+
+        String rua = l.entDados("Rua da casa da arma:");  
+		a1.getLugar().setRua(rua);
+
+
+
+        do{
+            String numero = l.entDados("Numero da casa da arma:");
+            ver = true;
+            try{
+                a1.getLugar().setNumero(Integer.parseInt(numero));
+            } catch(NumberFormatException e){
+                System.out.println("Digite apenas numerais.");
+                ver = false;
+            }
+        } while(!ver);
+
+
+        
+
+
 
 		String nome1 = a1.getNome();
 		String fabricante1 = a1.getFabricante();
@@ -44,16 +71,10 @@ public class TstArms{
 		String rua1 = a1.getLugar().getRua();
 		int num1 = a1.getLugar().getNumero();
 
-		//String nome2 = a2.getNome();
-		String fabricante2 = a2.getFabricante();
-		int municao2 = a2.getMunicao();
-		//int ano2 = a2.getAno_c();
-        	String rua2 = a2.getLugar().getRua();
-		int num2 = a2.getLugar().getNumero();
+		
 
 
 
 		System.out.println(nome1+" "+fabricante1+" "+municao1+" "+ano1+"\n"+rua1+" "+num1);
-		System.out.println(nome2+" "+fabricante2+" "+municao2+" "+ano2+"\n"+rua2+" "+num2);
 	}
 }
