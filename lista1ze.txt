@@ -8,7 +8,7 @@ R: Fazer uma seleção escolhendo entre  as informações que são importantes p
 
 3)_ Quais são os artefatos produzidos na programação orientada a objetos?
 
-R:
+R: Classes, Objetos, Métodos e Atributos
 
 4)_ O que é um “tipo primitivo” de dados?
 
@@ -20,7 +20,7 @@ R: Os tipos abstratos de dados são os que não são fornecidos pela linguagem, 
 
 6)_ Explique o que é o “Garbage Collector”. Como este recurso pode dinamizar o funcionamento do sistema?
 
-R:
+R: Uma variável apenas existe dentro do seu escopo, quando a execução sai deste escopo, a variável deixa de existir por causa do garbage collector. Basicamente, o garbage collector serve para liberar as memórias de objetos que não estão mais sendo usados.
 
 7)_ Considerando o modo Shell (linhas de comando) do sistema operacional Windows, como se faz para:
 7.a)_ Compilar um código fonte Java;
@@ -45,7 +45,7 @@ R:
 
 11)_ Explique como aplicamos o conceito de “Modularidade” em Java. Na resposta desta questão deve-se trata dos conceitos sobre “Acoplagem” e “Coesão”.
 
-R:
+R: Coesão é quando existe existe apenas uma classe com todas suas funcionalidades e atributos numa só, e acoplagem é quando uma classe depende da outra, comum em sistemas com classes entidades, que representam coisas da vida real.
 
 11.a)_ Como esta característica pode ajudar na questão da “Manutenibilidade”?
 
@@ -54,7 +54,7 @@ R:
 12)_ Para servem os objetos:
 12.a)_ this;
 
-R:
+R: Para refernciar o atributo do objeto
 
 12.b)_ super.
 
@@ -66,9 +66,16 @@ R:
 
 14)_ Dentre os conceitos de sustenta a Orientação a Objetos, explique:
 14.a)_ Encapsulamento:
+
+R: Conceito e técninca que permite gerenciar as trocas de mensagens, possui níveis
+
 14.a.i)_Seus níveis (explique cada um dos três níveis);
 
-R:
+R: 
+- + public = sem restrições de acesso
+- - private = restrição total de acesso
+- # protected restricao parcial
+- package restricao parcial 
 
 14.a.ii)_ Como o Encapsulamento pode nos ajudar na padronização, segurança e
 “manutenibilidade” no desenvolvimento de sistemas;
@@ -107,7 +114,7 @@ R:
 
 16)_ Explique o que são trocas de mensagens? Como isso acontece?
 
-R:
+R: São as formas que dois objetos se comunicam, e o encapsulamento ajusta como essas trocas podem acontecer
 
 17)_ O que é um “método construtor”? Qual sua importância? Faça um código que demonstre sua explicação.
 
