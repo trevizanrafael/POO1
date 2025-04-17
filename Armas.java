@@ -6,6 +6,12 @@ public class Armas{
 	private String fabricante = "";
 	private Endereco lugar = new Endereco();
 	
+	
+	public Armas(){
+		System.out.println("Construtor de armas");
+		municao = 30;
+		nome = "AK-47";
+	}
 
 
 	public Endereco getLugar(){
