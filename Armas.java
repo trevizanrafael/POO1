@@ -33,6 +33,7 @@ public class Armas{
 
 	public void impDados(int sob1){
 		System.out.println("Metodo sobrecarregado 1");
+		System.out.println(sob1*50);
 	}
 
 
