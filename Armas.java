@@ -1,18 +1,46 @@
 public class Armas{
 	
-	private String nome = "";
-	private int municao = 0;
-	private int ano_c = 0;
-	private String fabricante = "";
-	private Endereco lugar = new Endereco();
+	private String nome;
+	private int municao;
+	private int ano_c;
+	private String fabricante;
+	private Endereco lugar;
 	
 	
 	public Armas(){
 		System.out.println("Construtor de armas");
-		municao = 30;
-		nome = "AK-47";
+		nome = "";
+		municao = 0;
+		ano_c = 0;
+		fabricante = "";
+		lugar = new Endereco();
 	}
 
+	public Armas(String nome, int municao, int ano_c, String fabricante, Endereco lugar){
+		System.out.println("Construtor Sobrecarga 1 de armas");
+		this.nome = "";
+		this.municao = 0;
+		this.ano_c = 0;
+		this.fabricante = "";
+		this.lugar = new Endereco();
+	}
+
+
+	public void impDados(){
+		System.out.println("Metodo default");
+	}
+
+
+	public void impDados(int sob1){
+		System.out.println("Metodo sobrecarregado 1");
+	}
+
+
+	public void impDados(String sob2){
+		System.out.println("Metodo sobrecarregado 2");
+	}
+
+	
 	public Endereco getLugar(){
 		return lugar;
 	}
