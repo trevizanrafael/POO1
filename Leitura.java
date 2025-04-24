@@ -3,8 +3,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Leitura{
-
-	public String entDados(String rotulo){
+//o static serve pra poder chamar sem objeto,que nem parseInt
+	public static String entDados(String rotulo){
 		System.out.println(rotulo);
 		InputStreamReader teclado;
 		teclado = new InputStreamReader(System.in);
