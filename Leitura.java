@@ -3,6 +3,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Leitura{
+
+	private static Leitura leitUnic; //1 passo singleton
+
+	private Leitura(){
+		//2 passo
+	}
+
+	public static Leitura geraLeitura(){//3 passo
+		if(leitUnic == null){
+			leitUnic = new Leitura();
+		}
+		
+		return leitUnic;
+	}// l1 = Leitura.geraLeitura();
+	
 //o static serve pra poder chamar sem objeto,que nem parseInt
 	public static String entDados(String rotulo){
 		System.out.println(rotulo);
