@@ -5,7 +5,7 @@ public class TstArms{
         Leitura l;
 
         //Inicializacao dos objetos
-		a1 = new Armas();
+	a1 = new Armas();
         l =  new Leitura();
 
         //Entrada do nome do objeto
