@@ -6,7 +6,7 @@ public class Leitura{
 
 	private static Leitura leitUnic; //1 passo singleton
 
-	private Leitura(){
+	private Leitura(){//perguntar ze
 		//2 passo
 	}
 
