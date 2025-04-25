@@ -1,86 +1,43 @@
-public class Rifles extends Armas{
+public class Pistolas extends Armas{
+	private String empunhadura;
 	private int tempoTrocaCartucho;
-  private boolean silenciador;
-  private String empunhadura;
+	private boolean silenciador;
 	
-	//TERMINAR DAQUI PARA BAIXO
-	public Armas(){
-		System.out.println("Construtor de armas");
-		nome = "";
-		municao = 0;
-		ano_c = 0;
-		fabricante = "";
-		lugar = new Endereco();
+	public Pistolas(){
+		this.empunhadura = "";
+		this.tempoTrocaCartucho = 0;
+		this.silenciador = false;
 	}
 
-	public Armas(String nome, int municao, int ano_c, String fabricante, Endereco lugar){
+	public Pistolas(String empunhadura, int tempoTrocaCartucho, boolean silenciador){
 		System.out.println("Construtor Sobrecarga 1 de armas");
-		this.nome = "";
-		this.municao = 0;
-		this.ano_c = 0;
-		this.fabricante = "";
-		this.lugar = new Endereco();
+		this.empunhadura = empunhadura;
+		this.tempoTrocaCartucho = tempoTrocaCartucho;
+		this.silenciador = silenciador;
+	}
+
+	public void setEmpunhadura(String empunhadura){
+		this.empunhadura = empunhadura;
+	}
+	
+	public void setTempoTrocaCartucho(int tempoTrocaCartucho){
+		this.tempoTrocaCartucho = tempoTrocaCartucho;
+	}
+
+	public void setSilenciador(boolean silenciador){
+		this.silenciador = silenciador;
 	}
 
 
-	public void impDados(){
-		System.out.println("Metodo default");
+	public String getEmpunhadura(){
+		return this.empunhadura;
 	}
 
-
-	public void impDados(int sob1){
-		System.out.println("Metodo sobrecarregado 1");
-		System.out.println(sob1*50);
+	public int getTempoTrocaCartucho(){
+		return this.tempoTrocaCartucho;
 	}
 
-
-	public void impDados(String sob2){
-		System.out.println("Metodo sobrecarregado 2");
-	}
-
-	
-	public Endereco getLugar(){
-		return lugar;
-	}
-
-	public void setLugar(Endereco lugar){
-		this.lugar=lugar;
-	}
-	
-	public int getMunicao(){
-		return municao;
-	}
-	
-	public int getAno_c(){
-		return ano_c;
-	}
-	
-	public String getNome(){
-		return nome;
-	}
-	
-	public String getFabricante(){
-		return fabricante;
-	}
-	
-	
-	public void setMunicao(int municao){
-		if(municao>0){
-			this.municao=municao;
-		} else {
-			System.out.println("ERRO NO CADASTRO DE MUNICAO");
-		}
-	}
-	
-	public void setAno_c(int ano_c){
-		this.ano_c=ano_c;
-	}
-	
-	public void setNome(String nome){
-		this.nome=nome;
-	}
-	
-	public void setFabricante(String fabricante){
-		this.fabricante=fabricante;
+	public boolean getSilenciador(){
+		return this.silenciador;
 	}
 }
