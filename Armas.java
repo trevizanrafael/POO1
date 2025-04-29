@@ -68,11 +68,7 @@ public class Armas{
 	
 	
 	public void setMunicao(int municao){
-		if(municao>0){
-			this.municao=municao;
-		} else {
-			System.out.println("ERRO NO CADASTRO DE MUNICAO");
-		}
+		this.municao=municao;
 	}
 	
 	public void setAno_c(int ano_c){
