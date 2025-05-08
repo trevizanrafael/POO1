@@ -2,7 +2,7 @@
 NOME: Rafael Moraes Trevizan
 RA: 2648938
  */
-public class Armas{
+public abstract class Armas{
 	private Pessoa pessoa;
 	private String nome;
 	private int municao;
