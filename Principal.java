@@ -2,7 +2,7 @@
 NOME: Rafael Moraes Trevizan
 RA: 2648938
  */
-public class TstArms{
+public class Principal{
 	public static void main(String args[]){
 		boolean ver;
         Pistolas p1 = new Pistolas();
