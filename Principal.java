@@ -24,7 +24,7 @@ public class Principal{
                     escolhaInt = Integer.parseInt(escolhaString);
                 } catch(NumberFormatException e){
                     System.out.println("\nDigite apenas numerais.\n");
-                    ver = false;
+                    verLeitura = false;
                 }
             } while(!verLeitura);
             
