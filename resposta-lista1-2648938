@@ -1,0 +1,254 @@
+1)_ Por que falamos que Java é totalmente aderente às técnicas de Orientação a Objetos?
+
+R:
+Porque tudo em Java gira em torno de objetos e classes, desde os tipos de dados compostos até as funcionalidades, exceto os tipos primitivos. Ele implementa todos os pilares da orientação a objetos: abstração, encapsulamento, herança e polimorfismo.
+
+2)_ Explique o que é e como se utiliza o processo de “abstração”.
+
+R:
+Fazer uma seleção escolhendo entre as informações que são importantes para a implementação e descartar as que não são importantes.
+
+3)_ Quais são os artefatos produzidos na programação orientada a objetos?
+
+R:
+Classes, Objetos, Métodos e Atributos.
+
+4)_ O que é um “tipo primitivo” de dados?
+
+R:
+Tipo primitivos de dados são tipos de dados básicos fornecidos pela linguagem de programação, como int, double e char.
+
+5)_ O que é um “tipo abstrato” de dados?
+
+R:
+Os tipos abstratos de dados são os que não são fornecidos pela linguagem, ou seja, os tipos de dados criados pelo dev, como structs em C ou classes em Java.
+
+6)_ Explique o que é o “Garbage Collector”. Como este recurso pode dinamizar o funcionamento do sistema?
+
+R:
+Uma variável apenas existe dentro do seu escopo, quando a execução sai deste escopo, a variável deixa de existir por causa do garbage collector. Basicamente, o garbage collector serve para liberar as memórias de objetos que não estão mais sendo usados.
+
+7.a)_ Compilar um código fonte Java;
+
+R:
+javac (nomedoarquivo).java
+
+7.b)_ Fazer com que a J.V.M. (Máquina Virtual Java) execute uma aplicação Java.
+
+R:
+java (nomedoarquivo)
+
+8)_ O que é o “ByteCode”?
+
+R:
+O ByteCode é o arquivo que você gera quando compila o source em sua devida linguagem, no caso do Java, o ByteCode é o .class e o source é o .java
+
+9)_ Explique o que é a característica “Portabilidade”. Como isto é possível com aplicações Java?
+
+R:
+Portabilidade nesse caso se refere a S.O, no caso, Java tem uma particularidade, que se diz a J.V.M. (Máquina Virtual Java), para rodar um arquivo Java, é necessário essa JVM, então, o arquivo Java não conversa com o S.O, e sim com a JVM, então em qualquer S.O um arquivo Java roda.
+
+10)_ Justifique a afirmação que diz que “a segurança em Java se dá em dois níveis: proteção de hardware e proteção de software”.
+
+R:
+No nível de software, Java protege a execução do programa com o uso da JVM, evitando ações indevidas como acesso direto à memória. No nível de hardware, a segurança se dá porque o código não é executado diretamente no sistema operacional, e sim pela máquina virtual, que age como uma camada de proteção entre o sistema e o código.
+
+11)_ Explique como aplicamos o conceito de “Modularidade” em Java. Na resposta desta questão deve-se trata dos conceitos sobre “Acoplagem” e “Coesão”.
+
+R:
+Coesão é quando existe apenas uma classe com todas suas funcionalidades e atributos numa só, e acoplagem é quando uma classe depende da outra, comum em sistemas com classes entidades, que representam coisas da vida real.
+
+11.a)_ Como esta característica pode ajudar na questão da “Manutenibilidade”?
+
+R:
+Porque facilita o entendimento do sistema, separando responsabilidades em módulos independentes (alta coesão), com pouca dependência entre eles (baixo acoplamento), tornando mais simples modificar ou corrigir partes do código sem afetar o restante.
+
+12.a)_ this;
+
+R:
+Para referenciar o atributo do objeto.
+
+12.b)_ super.
+
+R:
+Serve para referenciar a superclasse, ou seja, acessar atributos ou métodos da classe pai.
+
+13)_ Usando Java, dê um exemplo que contemple as respostas das questões 12.a e 12.b.
+
+R:
+class Animal {
+  String nome;
+
+  Animal(String nome) {
+    this.nome = nome;
+  }
+
+  void falar() {
+    System.out.println("Som genérico");
+  }
+}
+
+class Cachorro extends Animal {
+
+  Cachorro(String nome) {
+    super(nome);
+  }
+
+  void apresentar() {
+    System.out.println("Meu nome é " + this.nome);
+    super.falar();
+  }
+}
+
+14.a)_ Encapsulamento:
+
+R:
+Conceito e técnica que permite gerenciar as trocas de mensagens. Possui níveis de acesso que controlam o que pode ou não ser acessado de fora da classe.
+
+14.a.i)_Seus níveis (explique cada um dos três níveis);
+
+R:
+public = sem restrições de acesso, visível em qualquer parte do programa.
+private = acesso restrito apenas dentro da própria classe.
+protected = acesso permitido dentro da mesma classe, pacote e subclasses.
+package (sem modificador) = acesso permitido apenas dentro do mesmo pacote.
+
+14.a.ii)_ Como o Encapsulamento pode nos ajudar na padronização, segurança e “manutenibilidade” no desenvolvimento de sistemas;
+
+R:
+O encapsulamento controla o acesso aos dados das classes, mantendo os atributos privados e permitindo a manipulação segura por meio de métodos públicos. Isso faz com que acessos indevidos não ocorram.
+
+14.b)_ Herança:
+
+R:
+Herança é um mecanismo que permite que uma classe (filha) herde atributos e métodos de outra (mãe), promovendo reuso e organização de código.
+
+14.b.i)_ Explique os conceitos que “Generalização” e “Especialização”;
+
+R:
+Generalização é o processo de abstrair características comuns de várias classes em uma superclasse.
+Especialização é a criação de subclasses específicas que herdam e expandem os comportamentos da superclasse.
+
+14.b.ii)_ Como o mecanismo de Herança pode nos ajudar na padronização, segurança e “manutenibilidade” no desenvolvimento de sistemas;
+
+R:
+A herança permite que classes compartilhem comportamentos comuns definidos em uma superclasse. 
+
+14.b.iii)_ Explique o conceito de “Reusabilidade”. Como este é aplicado no mecanismo de Herança e, ainda, como esta possibilidade nos ajuda no dinamismo da codificação.
+
+R:
+Reusabilidade é a capacidade de utilizar código já existente em diferentes partes do programa.
+
+14.c.i)_ Sobrecarga;
+
+R:
+Sobrecarga acontece quando há dois ou mais métodos com o mesmo nome dentro da mesma classe, mas com parâmetros diferentes.
+
+14.c.ii)_ Sobrescrita;
+
+R:
+Sobrescrita ocorre quando uma subclasse redefine um método herdado da superclasse com o mesmo nome e mesma assinatura, alterando seu comportamento.
+
+14.c.iii)_ Coerção.
+
+R:
+Conversão de um tipo de objeto para outro.
+
+15)_ Construa um programa para exemplificar as respostas das questões 14.a, 14.b e 14.c.
+
+R:
+class Pessoa {
+  private String nome;
+  protected int idade;
+
+  public Pessoa(String nome, int idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  public void apresentar() {
+    System.out.println("Nome: " + nome + ", Idade: " + idade);
+  }
+
+  public void falar(String frase) {
+    System.out.println(nome + " diz: " + frase);
+  }
+
+  public void falar() {
+    System.out.println(nome + " está em silêncio...");
+  }
+}
+
+class Aluno extends Pessoa {
+  private String curso;
+
+  public Aluno(String nome, int idade, String curso) {
+    super(nome, idade);
+    this.curso = curso;
+  }
+
+  @Override
+  public void apresentar() {
+    super.apresentar();
+    System.out.println("Curso: " + curso);
+  }
+}
+
+16)_ Explique o que são trocas de mensagens? Como isso acontece?
+
+R:
+São as formas que dois objetos se comunicam. Isso acontece quando um objeto chama um método de outro objeto. O encapsulamento define as regras de como essas mensagens podem ser trocadas.
+
+17)_ O que é um “método construtor”? Qual sua importância? Faça um código que demonstre sua explicação.
+
+R:
+É um método especial que é executado quando um objeto é criado. Ele serve para inicializar os atributos do objeto.
+
+class Produto {
+  String nome;
+  double preco;
+  
+  Produto(String nome, double preco) {
+    this.nome = nome;
+    this.preco = preco;
+  }
+
+  Produto() {
+    this.nome = "";
+    this.preco = 0;
+  }
+
+  void mostrar() {
+    System.out.println(nome + " custa R$" + preco);
+  }
+}
+
+18.a)_ Classe abstrata;
+
+R:
+É uma classe que não pode ser instanciada diretamente e serve de modelo para outras classes.Se usa quando a classe será compartilhada por várias subclasses.
+
+18.b)_ Método abstrato;
+
+R:
+É um método sem implementação que deve ser obrigatoriamente sobrescrito pelas subclasses. Só pode existir dentro de uma classe abstrata.
+
+18.c)_ Classe final;
+
+R:
+É uma classe que não pode ser herdada.
+
+18.d)_ Atributo final;
+
+R:
+É um atributo constante, que só pode ser atribuído uma vez.
+
+18.e)_ Método final.
+
+R:
+É um método que não pode ser sobrescrito pelas subclasses.
+
+19)_ Dentro da tecnologia Java, explique o que é a estrutura de dados “Interface”. Quando a utilizamos?
+
+R:
+Usamos uma interface quando queremos que uma classe implemente um método
